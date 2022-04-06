@@ -65,10 +65,10 @@ window.addEventListener("load", () => {
     Temperature.text(unit === "C" ? `${tempFahr} °F` : `${tempCel} °C`);
   });
 
-  function noLocationFound() {
+  function noLocationFound(city) {
     button.click(function () {
       const api = `https://api.openweathermap.org/data/2.5/weather?q=${input.val()}&appid=b86478b498e1b8b19398c1e9324abf6e&units=metric`;
-
+      console.log("hello");
       fetch(api)
         .then((response) => {
           return response.json();
