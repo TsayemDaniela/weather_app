@@ -10,42 +10,47 @@
 </head>
 
 <body>
-    <h2 class="heading medium">Enter your city below</h2>
+    <h2 class="heading medium">Enter your city below manually:</h2>
     <form id="input-form" class="container">
-        <input class="form-item" type="text" name="city" placeholder="Enter the city..." />
-        <input class="form-item" type="button" value="Submit" />
+        <input class="form-item input_text" type="text" name="city" placeholder="Enter the city..." />
+        <input class="form-item button" type="button" value="Submit" />
     </form>
 
     <div class="container" id="info-city">
-        <h1 class="large">Munich</h1>
-        <p class="paragraph">Germany</p>
+        <h1 class="large city">Munich</h1>
+        <p class="paragraph country">Germany</p>
     </div>
 
-    <h1 class="display large">28 °C</h1>
-
+    <div class="large display">
+        <h2 class= "degree"></h2> 
+    </div>
     <div class="container" id="info-items">
         <div class="info-item" id="info-condition">
             <!-- add svg here -->
-            <svg xmlns="http://www.w3.org/2000/svg" height="6rem" width="6rem" fill="currentColor" class="bi bi-cloudy-fill" viewBox="0 0 16 16">
-                <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm.247-6.998a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973z"/>
-            </svg>
-            <p class="paragraph">Cloudy with a chance of meatballs</p>
+            <canvas id="weather_icon" width="150" height="150"></canvas>
+            <p class="paragraph description">Cloudy with a chance of meatballs</p>
         </div>
         <div class="info-item" id="info-humidity">
           <svg xmlns="http://www.w3.org/2000/svg" height="6rem" width="6rem"  fill="currentColor" class="bi bi-droplet-fill" viewBox="0 0 16 16">
             <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 
             6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
           </svg>
-            <p class="paragraph">Humidity 70%</p>
+            <p class="paragraph humidity">Humidity 70%</p>
         </div>
         <div class="info-item" id="info-visibility">
             <svg xmlns="http://www.w3.org/2000/svg" height="6rem" width="6rem" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
               <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
               <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
             </svg>
-            <p class="paragraph">Visibility 28km</p>
+            <p class="paragraph visibility">Visibility 28km</p>
         </div>
     </div>
+    <script       
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

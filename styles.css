@@ -53,10 +53,33 @@ input[type=button] {
   /* flex-grow: 2; */
 }
 
+.city,
 .large{
   font-size: 4rem;
 }
 
+.degree{
+  /* display: flex;
+  align-items: center; */
+  cursor: pointer;
+}
+
+
+/* .sameline{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+} */
+
+
+/* .unit{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+/* } */
+
+.country,
 .paragraph{
   font-size: 1.5rem;
 }
@@ -88,4 +111,10 @@ input[type=button] {
   text-align: center;
   width: 20%;
   padding: 0 2rem;
+}
+
+.description,
+.visibility,
+.humidity {
+  font-size: 1.5rem;
 }
